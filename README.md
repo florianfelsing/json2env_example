@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a test environment for EJSON by Shopify.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+If using Homebrew, install ejson like this:
+```bash
+brew tap shopify/shopify
+brew install ejson
+```
 
-* System dependencies
+On Ubuntu, get your .deb package from [GitHub](https://github.com/Shopify/ejson/releases) or
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt install ejson
+```
 
-* Configuration
+Check if ejson has been installed correctly:
 
-* Database creation
+```bash
+ejson --version
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Place provided key in your system's /opt/ejson/keys directory
