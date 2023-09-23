@@ -36,3 +36,4 @@ to write into .env.
 In Rails:
 
 Execute rake task rake env:load
+# json2env_example
