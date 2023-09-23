@@ -24,3 +24,15 @@ ejson --version
 ```
 
 Place provided key in your system's /opt/ejson/keys directory
+
+Use 
+
+```bash
+ejson2env -k /path/to/private_key /path/to/encrypted.ejson | sed 's/export //g' > .env
+```
+
+to write into .env.
+
+In Rails:
+
+Execute rake task rake env:load
